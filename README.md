@@ -8,14 +8,11 @@ Please add a brief description of your final project here.
 
 | Command | Description |
 | --- | --- |
-|`npm install` | Installs dependencies |
-|`npm run start` | Start development. Edit your code in the `src` folder. |
-|`npm run lint` | Run all linters on your code. |
-|`npm run lint:html` | Lint your HTML for validation issues using HTML Validate. |
-|`npm run lint:styles` | Lint your Sass/CSS styles for formatting and coding standards errors using Stylelint. |
-|`npm run lint:js` | Lint your JavaScript for possible formatting and coding standards errors using ESLint. |
-|`npm run build` | Create a production-ready build of your code to the `dist` folder. |
-|`npm run deploy` | Builds and deploys your code to Github Pages. |
+| **`npm install`** | Installs dependencies |
+| **`npm run start`** | Start development. Edit your code in the `src` folder. |
+| **`npm run lint`** | Checks all code for formatting and validation errors. |
+| **`npm run build`** | Create a production-ready build of your code to the `dist` folder. |
+| **`npm run deploy`** | Builds and deploys your code to Github Pages. |
 
 ## Credits
 
