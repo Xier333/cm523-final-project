@@ -10,9 +10,6 @@ const html = {
   use: [
     {
       loader: 'html-loader',
-      options: {
-        interpolate: true,
-      },
     },
   ],
 };
@@ -47,9 +44,11 @@ const cssLoader = {
 const postcssLoader = {
   loader: 'postcss-loader',
   options: {
-    plugins: [
-      require('autoprefixer')(),
-    ],
+    postcssOptions: {
+      plugins: [
+        [ 'autoprefixer' ],
+      ],
+    },
     sourceMap,
   },
 };
@@ -97,7 +96,7 @@ const less = {
 const imageLoader = {
   loader: 'image-webpack-loader',
   options: {
-    bypassOnDebug: true,
+    disable: true,
     gifsicle: {
       interlaced: false,
     },
@@ -105,7 +104,7 @@ const imageLoader = {
       optimizationLevel: 7,
     },
     pngquant: {
-      quality: '65-90',
+      quality: [0.65, 0.90],
       speed: 4,
     },
     mozjpeg: {
