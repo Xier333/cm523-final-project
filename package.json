@@ -27,7 +27,8 @@
     "lint": "npm run lint:html && npm run lint:styles && npm run lint:js",
     "fix": "./node_modules/.bin/eslint --fix \"src/**/*.js\" && stylelint --fix \"src/**/*.scss\"",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -67,8 +68,38 @@
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-merge": "^5.8.0",
-    "webpackbar": "^5.0.0-3"
+    "webpackbar": "^5.0.0-3",
+    "cm523-unit-tests": "github:ProfessorKolodziej/cm523-unit-tests",
+    "jest": "^25.3.0",
+    "@testing-library/dom": "^7.22.2",
+    "@testing-library/jest-dom": "^5.5.0",
+    "babel-jest": "^25.3.0"
   },
+  "jest": {
+    "clearMocks": true,
+    "setupFilesAfterEnv": [
+      "regenerator-runtime/runtime"
+    ],
+    "testMatch": [
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    "testPathIgnorePatterns": [],
+    "transformIgnorePatterns": [],
+    "haste": {
+      "providesModuleNodeModules": [
+        "cm523-unit-tests/final-project"
+      ]
+    },
+    "transform": {
+      "\\.js$": [
+        "babel-jest",
+        {
+          "configFile": "./node_modules/cm523-unit-tests/babel.config.js"
+        }
+      ]
+    }
+  },
+
   "dependencies": {
     "normalize.css": "^8.0.1",
     "webpack-dev-server": "^4.0.0"
