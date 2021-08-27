@@ -28,7 +28,7 @@
     "fix": "./node_modules/.bin/eslint --fix \"src/**/*.js\" && stylelint --fix \"src/**/*.scss\"",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
     "deploy": "npm run build && gh-pages -d dist",
-    "test": "npm run lint"
+    "test": "npm run lint && jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -99,7 +99,6 @@
       ]
     }
   },
-
   "dependencies": {
     "normalize.css": "^8.0.1",
     "webpack-dev-server": "^4.0.0"
