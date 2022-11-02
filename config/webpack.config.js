@@ -13,7 +13,6 @@ module.exports = {
   output: {
     path: path.join(config.root, config.paths.dist),
     filename: '[name].[hash].js',
-	 publicPath: '/',
   },
   mode: ['production', 'development'].includes(config.env)
     ? config.env
@@ -29,7 +28,6 @@ module.exports = {
     open: true,
     port: config.port,
     host: config.dev_host,
-	 // historyApiFallback: true, // Uncomment this if you need to use an API that requires a callback URL.
   },
   module: {
     rules: loaders,

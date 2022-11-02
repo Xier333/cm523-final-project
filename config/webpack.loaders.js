@@ -97,8 +97,8 @@ const imageLoader = {
 };
 
 const images = {
-	test: /\.(gif|png|jpe?g|svg)$/i,
-	type: 'asset/resource'
+  test: /\.(gif|png|jpe?g|svg)$/i,
+  type: 'asset/resource'
 };
 
 // Font loaders
