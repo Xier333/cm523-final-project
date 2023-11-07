@@ -38,9 +38,9 @@
   },
   "dependencies": {
     "cm523-unit-tests": "github:ProfessorKolodziej/cm523-unit-tests",
+    "@profkexplains/htmlvalidate": "file:config/htmlvalidate",
     "html-validate": "^8.0.5",
-    "jest": "^29.5.0",
-    "@profkexplains/htmlvalidate": "file:config/htmlvalidate"
+    "jest": "^29.5.0"
   },
   "jest": {
     "clearMocks": true,
