@@ -1,8 +1,8 @@
-# Final Project (Replace with your project name)
+# Final Project - Diamond Crevasse ACGN Party Website
 
 ## Description
 
-Please add a brief description of your final project here.
+This is a website for an anime rave event called Diamond Crevasse ACGN Party. This website includes introductions to events, past information, and the latest event updates. Customers can also easily access other social media platforms for this event and navigate to the current ticket purchasing page through this website.
 
 ## Project Documentation
 
