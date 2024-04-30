@@ -1,24 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Update your description here" />
-	<title>Update your title here</title>
-	<!--
-		This is where you should link your CSS file.
-	-->
-</head>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/DC/dcap_favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diamond Crevasse ACGN Party</title>
+  </head>
+  
 <body>
-	<main class="content-container">
-		<h1>Welcome to your final project!</h1>
-	</main>
-	<!--
-		This is where you should link your JS file.
-	-->
-</body>
+  <div class="skip"><a href="#home">Skip to Main Content</a></div>
 
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-xl navbar-dark container py-2 fixed-top" style="background-color: #000914;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/DC/dcap_menu_logo.png" width="180px" alt="dcap-nav-logo"></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="lineup.html">Lineup</a></li>
+          <li class="nav-item"><a class="nav-link" href="past-events.html">Past Events</a></li>
+          <li class="nav-item">
+            <a href="tickets.html" aria-label="Do you know">
+              <button class="btn btn-outline-primary">Buy Tickets</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Hero-->
+<main>
+  <section id="home">
+    <video autoplay="" muted="" loop="">
+      <source src="images/DC/bg_vid.mp4" type="video/mp4">
+      <track src="" kind="captions" srclang="en" label="english_captions">
+    </video>
+    <div class="container">
+      <div class="row">
+        <div class="home-text">
+          <img class="home-img" src="images/DC/dcap_full_logo.png" width="200px" alt="ow-hero-logo">
+          <header>
+          <h1 class="text-center">Party Hardy, Live Easy</h1>
+          <p class="text-center">#DiamondCrevasse #DCAP</p>
+          </header>
+            <a href="tickets.html" aria-label="Do you know">
+              <button class="btn btn-lg btn-outline-primary hero-btn">Join the party Now</button>
+            </a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+<!-- About Us -->
+<section id="about_us">
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-center"> <!-- Center horizontally and vertically -->
+      <div class="col-12 col-lg-4 text-center"> <!-- Ensures image is centered horizontally -->
+        <img id="selectedImage" class="img-fluid" src="images/DC/aboutus/wild_card.png" alt="Selected Image">
+      </div>
+      <div class="col-12 col-lg-8 text-center"> <!-- Center text horizontally -->
+        <h2>About Us</h2>
+        <h3>Your ultimate destination for all-female anime rave events.</h3>
+        <div class="about-us-btn-group"> <!-- Centered button group -->
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/anime_music.png')">
+            <i class="bi bi-music-note-list me-1"></i> Anime Music
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/dj.png')">
+            <i class="bi bi-vinyl-fill me-1"></i> DJ Remix
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/dance.png')">
+            <i class="bi bi-person-raised-hand me-1"></i> Random Dance
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/dance_p.png')">
+            <i class="bi bi-person-arms-up me-1"></i> Dance Performance
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/female.png')">
+            <i class="bi bi-gender-female me-1"></i> All-female Security Team
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/host.png')">
+            <i class="bi bi-gem me-1"></i> Club Host CosPlayer
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/photographer.png')">
+            <i class="bi bi-camera-fill me-1"></i> Professional Photographer
+          </button>
+          <button class="btn btn-primary" onclick="showImage('images/DC/aboutus/safe.png')">
+            <i class="bi bi-shield-fill-check me-1"></i> Safe Environment
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--Main Services-->
+  <section id="main_services" role="none">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="image-container image-offset">
+            <a href="experience.html">
+              <img src="images/DC/cities.jpg" class="img-fluid" alt="Image 1">
+              <div class="overlay"></div>
+              <div class="overlay-content"><h3>Experience</h3></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="image-container">
+            <a href="past-events.html">
+              <img src="images/DC/recap.jpg" class="img-fluid" alt="Image 2">
+              <div class="overlay"></div>
+              <div class="overlay-content"><h3>Recap Gallery</h3></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="image-container image-offset">
+            <a href="tickets.html">
+              <img src="images/DC/tickets.jpg" class="img-fluid" alt="Image 3">
+              <div class="overlay"></div>
+              <div class="overlay-content"><h3>Tickets</h3></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="image-container">
+            <a href="lineup.html">
+              <img src="images/DC/lineup.jpg" class="img-fluid" alt="Image 4">
+              <div class="overlay"></div>
+              <div class="overlay-content"><h3>Lineup</h3></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--FAQ-->  
+<section id="faq" class="container">
+    <h3>Frequently Asked Questions</h3>
+    <div class="accordion accordion-flush" id="accordionExample"> <!-- Accordion ID to manage collapse -->
+      <!-- Accordion Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-bs-parent="#accordionExample">
+            Do I need to be 18 years old to attend the event?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Yes, all raves hosted by Diamond Crevasse require attendees to be at least 18 years old. Additionally, those 21 and older can purchase and consume alcoholic beverages on-site.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo" data-bs-parent="#accordionExample">
+            Can I smoke inside the venue? What about marijuana and other drugs?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Smoking policies vary depending on the venue's regulations. Diamond Crevasse strictly prohibits the use of drugs.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree" data-bs-parent="#accordionExample">
+            Can trans men enter the venue?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Currently, the entry requirement is based on the gender listed on your ID. You must identify as female on your ID to be eligible for entry.
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--Spotify and sponsors-->
+<section id="spotify">
+  <div class="container py-4">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5SSGSFDgbafd5jKrAbZq88" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section id="sponsors">
+  <div class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-2">
+        <h3>Sponsors</h3>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+            <a href="https://www.instagram.com/akikawa.photostudio/">
+              <img src="./images/DC/sponsors/sponsor_akikawa.png" class="img-fluid" alt="Sponsor 1">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+            <a href="https://www.lunarusainc.com/">
+              <img src="./images/DC/sponsors/sponsor_lunar.png" class="img-fluid" alt="Sponsor 2">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+            <a href="https://www.instagram.com/mue_newyork/">
+              <img src="./images/DC/sponsors/sponsor_mueNY.png" class="img-fluid" alt="Sponsor 3">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+            <a href="https://www.instagram.com/yumchany/">
+              <img src="./images/DC/sponsors/sponsor_yumcha.png" class="img-fluid" alt="Sponsor 4">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+            <a href="https://www.coocoocachoony.com/">
+              <img src="./images/DC/sponsors/sponsor_coo.png" class="img-fluid" alt="Sponsor 5">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+            <a href="https://g.co/kgs/BW1VCYN">
+              <img src="./images/DC/sponsors/sponsor_yunnan.png" class="img-fluid" alt="Sponsor 6">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!--Footer-->
+ <footer class="container py-4 footer-row">
+  <div class="row align-items-center"> <!-- Use Bootstrap grid system -->
+    <!-- Left Column -->
+    <div class="col-md-6"> <!-- Occupies half the space -->
+      <div class="footer-logo"> <!-- Website logo -->
+        <img src="./images/DC/dcap_full_logo.png" alt="Website Logo" width="30%"> <!-- You can adjust width -->
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="footer-subscription">
+        <h5>Let's keep in touch!</h5>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Enter your email" aria-label="Email"> <!-- Email field -->
+          <button class="btn btn-primary" type="submit">Subscribe</button> <!-- Subscribe button -->
+        </form>
+
+        <div class="row mt-3">
+          <div class="col-6">
+            <h5>Social Media</h5>
+            <a href="#" class="me-2"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com/dcaparty?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.xiaohongshu.com/user/profile/653a97d8000000000d0061e4?xhsshare=CopyLink&appuid=5a350731e8ac2b2dfd62919d&apptime=1714453019 (https://www.xiaohongshu.com/user/profile/653a97d8000000000d0061e4?xhsshare=CopyLink&appuid=5a350731e8ac2b2dfd62919d&apptime=1714453019)" class="me-2"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="col-6">
+            <h5>Contact Us</h5>
+            <div class="contact-icons"> <!-- Use flexbox to align icons -->
+              <a href="mailto:dcapartyovo@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a href="https://discord.com/invite/TGQ4v6GH"><i class="bi bi-discord"></i></a>
+              <div class="popup-container"> <!-- Container for WeChat pop-up -->
+                <a href="javascript:void(0);" onclick="togglePopup()"><i class="bi bi-wechat"></i></a>
+                <div id="wechat-popup" class="popup"> <!-- Pop-up for WeChat -->
+                  <img src="images/DC/wechat.png" class="popup-image" alt="WeChat QR Code">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Copyright -->
+  <footer>
+    <hr class="container">
+    <div class="text-center p-3 copyright-row">
+      <h5>DiamondCrevasse ACGN PARTY </h5>
+    </div>
+  </footer>
+
+</main>
+
+
+<!--Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  //change images on click
+  function showImage(imageUrl) {
+    document.getElementById('selectedImage').src = imageUrl;
+  }
+</script>
+
+<script>
+  function togglePopup() {
+    const popup = document.getElementById("wechat-popup");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+  }
+
+</script>
+
+
+
+</script>
+</body>
 </html>
